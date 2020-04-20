@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+.background {
+  background:
+    linear-gradient(
+      rgba(black,0.55),
+      rgba(255,0,0,0.45)
+    ),
+    url("https://images6.alphacoders.com/711/thumb-1920-711337.jpg");
+    width: 100vw;
+    height: 100vh
+  // background: rgba(255,255,255,0.5);
+}
+
+.content {
+  padding-top: 10vh;
+}
+
+.title {
+  color: #b3001b;
+  font-family: 'Creepster', cursive;
+}

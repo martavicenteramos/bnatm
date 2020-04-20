@@ -1,2 +1,14 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="background">
+  <div class="container content">
+  <h1>Welcome, dear Reader, to a </h1><h1 class="title">Bloodthirsty Night at Treatle Manor. </h1>
+  <p>Before you lies a story that few have been able to read and remain sane. As the pages begin to turn, and the dark mystery begins to pull you in, you may realise that you are beginning to lose your mind. Bring your wits, your strength, and above all your ice cool composure.</p>
+
+  <!-- <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/46/29/46293_v4.jpeg" alt="" style="max-height: 100%;max-width: 100%"> -->
+
+  <%= simple_form_for :user, url: {controller: 'users', action: 'create'}, method: :post do |f| %>
+    <%= f.input :name, label: "Before we begin, please type in your name:" %>
+    <%= f.input :gender, label: "Thank you. Please tell us your gender", collection: ["Female", "Male", "Fluid"] %>
+    <%= f.submit :GO, class: "btn-form" %>
+  <% end %>
+  </div>
+</div>
